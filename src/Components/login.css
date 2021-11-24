@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:linear-gradient(-90deg ,violet, indigo, cyan);
+    height: 100vh;
+}
+.box{
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.profile__img img{
+    height: 100px;
+    border-radius: 50px;
+}
+.box h2{
+    color: white;
+    text-transform: uppercase;
+
+}
+.box input[type = "text"], .box input[type = "password"]{
+    border: 0; 
+    background: none;
+    display: block;
+   margin: 20px auto;
+   text-align: center;
+   border: 3px solid #3489db;
+   padding: 14px 10px;
+   width: 235px;
+   outline: none;
+   color: white;
+   border-radius: 30px;
+   transition: .3s;
+}
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 350px;
+    border-color:#2ecc71 ;
+}
+
+.box input[type = "submit"]{
+    border: 0; 
+    background: none;
+    display: block;
+    margin: 20px auto;
+   text-align: center;
+   border: 3px solid #2ecc71;
+   padding: 14px 10px;
+   width: 150px;
+   outline: none;
+   color: white;
+   border-radius: 30px;
+   transition: .3s;
+}
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+
+.box h5{
+    color: lightgray;
+}
+
+
+@media screen and (max-width :550px){
+    .box{
+        width: 300px;
+        padding: 10px;
+    }
+    .box input[type = "text"], .box input[type = "password"]{
+
+        width: 150px;
+    }
+    .box input[type = "text"]:focus, .box input[type = "password"]:focus{
+        width: 250px;
+    }
+
+    .box input[type = "submit"]{
+        width: 90px;
+        padding: 0;
+    }
+    
+    
+}
